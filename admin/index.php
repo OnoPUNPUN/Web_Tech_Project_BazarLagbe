@@ -5,6 +5,7 @@ require_once __DIR__ . '/controllers/CategoryController.php';
 require_once __DIR__ . '/controllers/ProductController.php';
 require_once __DIR__ . '/controllers/OrderController.php';
 require_once __DIR__ . '/controllers/UserController.php';
+require_once __DIR__ . '/controllers/EmployeeController.php';
 require_once __DIR__ . '/controllers/ContactController.php';
 require_once __DIR__ . '/controllers/ReviewController.php';
 require_once __DIR__ . '/controllers/ProfileController.php';
@@ -26,6 +27,10 @@ switch ($page) {
         break;
     case 'users':
         $controller = new UserController();
+        $controller->handleRequest();
+        break;
+    case 'employees':
+        $controller = new EmployeeController();
         $controller->handleRequest();
         break;
     case 'messages':
