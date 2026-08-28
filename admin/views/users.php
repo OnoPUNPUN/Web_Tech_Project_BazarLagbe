@@ -28,7 +28,7 @@
          <p> user id : <span><?= $fetch_users['id']; ?></span></p>
          <p> username : <span><?= $fetch_users['name']; ?></span></p>
          <p> email : <span><?= $fetch_users['email']; ?></span></p>
-         <p> user type : <span style="color:<?php if ($fetch_users['user_type'] == 'admin') { echo 'orange'; } elseif ($fetch_users['user_type'] == 'rider') { echo 'var(--green)'; } elseif ($fetch_users['user_type'] == 'stock_manager') { echo 'blue'; } ?>"><?= $fetch_users['user_type']; ?></span></p>
+         <p> user type : <span style="color:<?php if ($fetch_users['user_type'] == 'admin') { echo 'orange'; } elseif ($fetch_users['user_type'] == 'rider') { echo 'var(--green)'; } elseif ($fetch_users['user_type'] == 'stock_manager') { echo 'blue'; } elseif ($fetch_users['user_type'] == 'warehouse_staff') { echo 'purple'; } ?>"><?= $fetch_users['user_type']; ?></span></p>
          
          <?php if ($fetch_users['id'] != $admin_id) { ?>
          <form action="" method="POST" style="margin-top: 1rem;">
@@ -38,6 +38,7 @@
                <option value="admin" <?= ($fetch_users['user_type'] == 'admin') ? 'selected' : ''; ?>>admin</option>
                <option value="stock_manager" <?= ($fetch_users['user_type'] == 'stock_manager') ? 'selected' : ''; ?>>stock_manager</option>
                <option value="rider" <?= ($fetch_users['user_type'] == 'rider') ? 'selected' : ''; ?>>rider</option>
+               <option value="warehouse_staff" <?= ($fetch_users['user_type'] == 'warehouse_staff') ? 'selected' : ''; ?>>warehouse_staff</option>
             </select>
             <input type="submit" value="update role" name="update_role" class="option-btn">
          </form>

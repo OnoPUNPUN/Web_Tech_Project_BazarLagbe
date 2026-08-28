@@ -53,6 +53,11 @@ class OrderModel {
         $stmt_stock->bind_param("ii", $quantity, $product_id);
         $stmt_stock->execute();
 
+        $note = "Order #" . $order_id . " placed";
+        $stmt_mv = $this->db->prepare("INSERT INTO `stock_movements`(product_id, employee_id, type, quantity, note) VALUES(?, NULL, 'stock_out', ?, ?)");
+        $stmt_mv->bind_param("iis", $product_id, $quantity, $note);
+        $stmt_mv->execute();
+
         return $res;
     }
 
@@ -73,6 +78,11 @@ class OrderModel {
                     $stmt_restock = $this->db->prepare("UPDATE `products` SET stock_quantity = stock_quantity + ? WHERE id = ?");
                     $stmt_restock->bind_param("ii", $item['quantity'], $item['product_id']);
                     $stmt_restock->execute();
+
+                    $note = "Order #" . $order_id . " cancelled";
+                    $stmt_mv = $this->db->prepare("INSERT INTO `stock_movements`(product_id, employee_id, type, quantity, note) VALUES(?, NULL, 'stock_in', ?, ?)");
+                    $stmt_mv->bind_param("iis", $item['product_id'], $item['quantity'], $note);
+                    $stmt_mv->execute();
                 }
             }
 

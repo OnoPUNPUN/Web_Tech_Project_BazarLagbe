@@ -20,7 +20,6 @@ function hash_password($pass) {
 
 function get_base_url() {
     $script_dir = dirname($_SERVER['SCRIPT_NAME']);
-    // Normalizing base URL path
     $base = preg_replace('/(\/admin|\/user|\/stock_manager|\/rider|\/auth).*$/', '', $script_dir);
     return rtrim($base, '/') . '/';
 }
@@ -51,6 +50,7 @@ function redirect_by_role($role) {
         case 'rider':
             header('Location: ' . $baseUrl . 'rider/index.php');
             break;
+        case 'warehouse_staff':
         case 'user':
         default:
             header('Location: ' . $baseUrl . 'user/index.php');

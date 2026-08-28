@@ -26,7 +26,7 @@ class UserController {
             $update_role = filter_var($_POST['user_type'], FILTER_SANITIZE_STRING);
 
             if ($update_user_id != $admin_id) {
-                $allowed_roles = ['user', 'admin', 'stock_manager', 'rider'];
+                $allowed_roles = ['user', 'admin', 'stock_manager', 'rider', 'warehouse_staff'];
                 if (in_array($update_role, $allowed_roles)) {
                     $this->userModel->updateUserRole($update_user_id, $update_role);
                     $message[] = 'user role updated successfully!';
