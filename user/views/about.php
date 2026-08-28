@@ -16,69 +16,54 @@
 
 <section class="about">
 
-   <div class="row">
+   <div class="box-container" style="max-width: 900px; margin: 0 auto; text-align: center;">
 
-      <div class="box">
-         <img src="../images/about-img-1.png" alt="">
-         <h3>why choose us?</h3>
-         <p>We source the freshest vegetables, fruits, and quality meats directly from local farmers and trusted suppliers. Enjoy unbeatable prices and lightning-fast delivery.</p>
-         <a href="index.php?page=contact" class="btn">contact us</a>
-      </div>
-
-      <div class="box">
-         <img src="../images/about-img-2.png" alt="">
-         <h3>what we provide?</h3>
-         <p>From daily fresh produce to organic grains, dairy, and household essentials, BazarLagbe brings the entire grocery market straight to your doorstep.</p>
-         <a href="index.php?page=shop" class="btn">our shop</a>
-      </div>
-
-   </div>
-
-</section>
-
-<section class="reviews">
-
-   <h1 class="title">clients reviews</h1>
-
-   <div class="box-container">
-
-      <div class="box">
-         <img src="../images/pic-1.png" alt="">
-         <p>BazarLagbe has made my daily grocery shopping so convenient. The produce is always super fresh!</p>
-         <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
+      <div class="box" style="padding: 3rem 2rem; border: var(--border); background-color: var(--white); box-shadow: var(--box-shadow); border-radius: .5rem; margin-bottom: 2rem;">
+         <img src="../images/aiub.png" alt="AIUB Logo" style="height: 12rem; max-width: 100%; object-fit: contain; margin-bottom: 1.5rem;">
+         <h1 style="font-size: 2.8rem; color: var(--black); text-transform: uppercase; margin-bottom: 1rem; font-weight: 600;">AMERICAN INTERNATIONAL UNIVERSITY-BANGLADESH</h1>
+         
+         <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem; margin-top: 1.5rem;">
+            <span style="font-size: 1.8rem; background-color: var(--green); color: var(--white); padding: .8rem 1.6rem; border-radius: .5rem; font-weight: 500;">Web Technology Project</span>
+            <span style="font-size: 1.8rem; background-color: var(--orange); color: var(--white); padding: .8rem 1.6rem; border-radius: .5rem; font-weight: 500;">Group - 2</span>
+            <span style="font-size: 1.8rem; background-color: var(--black); color: var(--white); padding: .8rem 1.6rem; border-radius: .5rem; font-weight: 500;">Section: E</span>
          </div>
-         <h3>John Doe</h3>
       </div>
 
-      <div class="box">
-         <img src="../images/pic-2.png" alt="">
-         <p>Fast delivery and great customer service. The rider delivered my order right on time.</p>
-         <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-         </div>
-         <h3>Sarah Smith</h3>
+      <div class="box" style="padding: 2.5rem 2rem; border: var(--border); background-color: var(--white); box-shadow: var(--box-shadow); border-radius: .5rem; margin-bottom: 2rem;">
+         <h2 style="font-size: 2rem; color: var(--light-color); text-transform: uppercase; margin-bottom: .8rem;">Presented To</h2>
+         <h3 style="font-size: 2.4rem; color: var(--green); text-transform: uppercase; font-weight: 600;">SULTANUL ARIFEEN HAMIM</h3>
       </div>
 
-      <div class="box">
-         <img src="../images/pic-3.png" alt="">
-         <p>Love the clean UI and easy navigation. Stock tracking ensures items are always available.</p>
-         <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
+      <div class="box" style="padding: 2.5rem 2rem; border: var(--border); background-color: var(--white); box-shadow: var(--box-shadow); border-radius: .5rem;">
+         <h2 style="font-size: 2.2rem; color: var(--black); text-transform: uppercase; margin-bottom: 2rem; border-bottom: var(--border); padding-bottom: 1rem; display: inline-block;">Created By</h2>
+         
+         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr)); gap: 1.5rem; margin-top: 1rem;">
+            
+            <div style="padding: 1.5rem; border: var(--border); background-color: var(--light-bg); border-radius: .5rem; text-align: center;">
+               <i class="fas fa-user-circle" style="font-size: 3.5rem; color: var(--green); margin-bottom: 1rem;"></i>
+               <h4 style="font-size: 1.8rem; color: var(--black); font-weight: 600; margin-bottom: .5rem;">Wasimul Bari Tonmoy</h4>
+               <p style="font-size: 1.5rem; color: var(--light-color);">ID: 24-56653-1</p>
+            </div>
+
+            <div style="padding: 1.5rem; border: var(--border); background-color: var(--light-bg); border-radius: .5rem; text-align: center;">
+               <i class="fas fa-user-circle" style="font-size: 3.5rem; color: var(--green); margin-bottom: 1rem;"></i>
+               <h4 style="font-size: 1.8rem; color: var(--black); font-weight: 600; margin-bottom: .5rem;">MD.ROBIUL ISLAM</h4>
+               <p style="font-size: 1.5rem; color: var(--light-color);">ID: 24-56643-1</p>
+            </div>
+
+            <div style="padding: 1.5rem; border: var(--border); background-color: var(--light-bg); border-radius: .5rem; text-align: center;">
+               <i class="fas fa-user-circle" style="font-size: 3.5rem; color: var(--green); margin-bottom: 1rem;"></i>
+               <h4 style="font-size: 1.8rem; color: var(--black); font-weight: 600; margin-bottom: .5rem;">MD. NAFIZ AHMED TANIM</h4>
+               <p style="font-size: 1.5rem; color: var(--light-color);">ID: 24-56644-1</p>
+            </div>
+
+            <div style="padding: 1.5rem; border: var(--border); background-color: var(--light-bg); border-radius: .5rem; text-align: center;">
+               <i class="fas fa-user-circle" style="font-size: 3.5rem; color: var(--green); margin-bottom: 1rem;"></i>
+               <h4 style="font-size: 1.8rem; color: var(--black); font-weight: 600; margin-bottom: .5rem;">MD HASANUZZAMAN</h4>
+               <p style="font-size: 1.5rem; color: var(--light-color);">ID: 24-56666-1</p>
+            </div>
+
          </div>
-         <h3>Michael Lee</h3>
       </div>
 
    </div>
@@ -91,3 +76,4 @@
 
 </body>
 </html>
+
