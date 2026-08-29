@@ -24,6 +24,7 @@ if (isset($message) && is_array($message)) {
          <a href="index.php?page=shop">shop</a>
          <a href="index.php?page=category">categories</a>
          <a href="index.php?page=orders">orders</a>
+         <a href="index.php?page=payment">payment</a>
          <a href="index.php?page=about">about</a>
          <a href="index.php?page=contact">contact</a>
       </nav>

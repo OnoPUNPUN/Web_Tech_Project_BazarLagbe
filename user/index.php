@@ -13,6 +13,7 @@ require_once __DIR__ . '/controllers/ReviewController.php';
 require_once __DIR__ . '/controllers/ContactController.php';
 require_once __DIR__ . '/controllers/AboutController.php';
 require_once __DIR__ . '/controllers/ProfileController.php';
+require_once __DIR__ . '/controllers/PaymentController.php';
 
 $page = isset($_GET['page']) ? $_GET['page'] : 'home';
 
@@ -43,6 +44,10 @@ switch ($page) {
         break;
     case 'checkout':
         $controller = new CheckoutController();
+        $controller->handleRequest();
+        break;
+    case 'payment':
+        $controller = new PaymentController();
         $controller->handleRequest();
         break;
     case 'orders':
