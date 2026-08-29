@@ -56,9 +56,9 @@
             <span>payment method :</span>
             <select name="method" class="box" required>
                <option value="cash on delivery">cash on delivery</option>
-               <option value="credit card">credit card (Simulated)</option>
-               <option value="bkash">bKash (Simulated)</option>
-               <option value="nagad">Nagad (Simulated)</option>
+               <option value="bkash">bKash</option>
+               <option value="nagad">Nagad</option>
+               <option value="rocket">Rocket</option>
             </select>
          </div>
          <div class="inputBox">

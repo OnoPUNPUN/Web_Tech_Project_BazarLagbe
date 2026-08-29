@@ -70,6 +70,11 @@ class CheckoutController {
                             $this->orderModel->addOrderItem($order_id, $item['pid'], $item['quantity'], $item['price']);
                         }
                         $this->cartModel->deleteAllCartItems($user_id);
+                        $lower_method = strtolower($method);
+                        if (in_array($lower_method, ['bkash', 'nagad', 'rocket'])) {
+                            header('location: index.php?page=payment&method=' . urlencode($lower_method) . '&amount=' . urlencode($cart_total) . '&step=2');
+                            exit();
+                        }
                         $message[] = 'order placed successfully!';
                     }
                 }
