@@ -78,7 +78,7 @@
 
             <div class="flex-btn">
                <input type="submit" name="process_payment" class="btn" value="Confirm & Pay">
-               <a href="index.php?page=payment" class="option-btn">Change Gateway</a>
+               <a href="index.php?page=payment&amount=<?= urlencode($amount); ?>" class="option-btn">Change Gateway</a>
             </div>
          </form>
 

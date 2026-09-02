@@ -39,7 +39,6 @@ class CategoryModel {
     }
 
     public function deleteCategory($id) {
-        // First set category_id in products to NULL
         $stmt1 = $this->db->prepare("UPDATE `products` SET category_id = NULL WHERE category_id = ?");
         $stmt1->bind_param("i", $id);
         $stmt1->execute();

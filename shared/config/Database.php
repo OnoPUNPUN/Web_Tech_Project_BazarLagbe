@@ -35,7 +35,6 @@ class Database {
     }
 }
 
-// Global mysqli instance variable $conn and $mysqli as requested
 $db = Database::getInstance();
 $conn = $db->getConnection();
 $mysqli = $conn;

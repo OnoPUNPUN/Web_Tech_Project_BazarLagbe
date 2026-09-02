@@ -4,7 +4,7 @@ if (isset($message) && is_array($message)) {
    foreach ($message as $msg) {
       echo '
       <div class="message">
-         <span>'.$msg.'</span>
+         <span>' . $msg . '</span>
          <i class="fas fa-times" onclick="this.parentElement.remove();"></i>
       </div>
       ';
@@ -24,7 +24,6 @@ if (isset($message) && is_array($message)) {
          <a href="index.php?page=shop">shop</a>
          <a href="index.php?page=category">categories</a>
          <a href="index.php?page=orders">orders</a>
-         <a href="index.php?page=payment">payment</a>
          <a href="index.php?page=about">about</a>
          <a href="index.php?page=contact">contact</a>
       </nav>
@@ -33,8 +32,10 @@ if (isset($message) && is_array($message)) {
          <div id="menu-btn" class="fas fa-bars"></div>
          <div id="user-btn" class="fas fa-user"></div>
          <a href="index.php?page=search" class="fas fa-search"></a>
-         <a href="index.php?page=wishlist"><i class="fas fa-heart"></i><span>(<?= isset($count_wishlist_items) ? $count_wishlist_items : 0; ?>)</span></a>
-         <a href="index.php?page=cart"><i class="fas fa-shopping-cart"></i><span>(<?= isset($count_cart_items) ? $count_cart_items : 0; ?>)</span></a>
+         <a href="index.php?page=wishlist"><i
+               class="fas fa-heart"></i><span>(<?= isset($count_wishlist_items) ? $count_wishlist_items : 0; ?>)</span></a>
+         <a href="index.php?page=cart"><i
+               class="fas fa-shopping-cart"></i><span>(<?= isset($count_cart_items) ? $count_cart_items : 0; ?>)</span></a>
       </div>
 
       <div class="profile">
